@@ -94,7 +94,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                     Congratulation(navController)
                 }
             } else {
-                Spacer(modifier = Modifier.height(135.dp))
+                Spacer(modifier = Modifier.height(112.dp))
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     item {
                         TextField(
@@ -107,7 +107,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         TextField(
                             value = productImage,
@@ -119,7 +119,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         TextField(
                             value = productPrice,
@@ -131,7 +131,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         TextField(
                             value = productCategory,
@@ -143,7 +143,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         TextField(
                             value = productStock,
@@ -155,7 +155,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(12.dp))
 
                         TextField(
                             value = productExpireDate,
@@ -167,7 +167,7 @@ fun AddProductUI(navController: NavController, viewModel: AppViewModel = hiltVie
                                 unfocusedContainerColor = Color.LightGray
                             )
                         )
-                        Spacer(modifier = Modifier.height(26.dp))
+                        Spacer(modifier = Modifier.height(24.dp))
 
                         Button(
                             onClick = {
