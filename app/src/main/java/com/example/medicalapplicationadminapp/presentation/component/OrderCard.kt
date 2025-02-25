@@ -69,26 +69,26 @@ fun UserOrderCard(
             }
 
             AnnotatedText("Order Status", orderStatusText, orderStatusColor)
-        }
 
-        if (orderStatus == 0) {
-            Row(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(start = 12.dp, end = 12.dp, bottom = 8.dp),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Button(
-                    onClick = { onClickDelete () },
-                    colors = ButtonDefaults.buttonColors(Color.Red)
+            if (orderStatus == 0) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(top = 6.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Text(text = "Cancel", fontWeight = FontWeight.SemiBold)
-                }
-                Button(
-                    onClick = { onClickOrderStatusChange() },
-                    colors = ButtonDefaults.buttonColors(Color.Green)
-                ) {
-                    Text(text = "Approved", fontWeight = FontWeight.SemiBold)
+                    Button(
+                        onClick = { onClickDelete() },
+                        colors = ButtonDefaults.buttonColors(Color.Red)
+                    ) {
+                        Text(text = "Cancel", fontWeight = FontWeight.SemiBold)
+                    }
+                    Button(
+                        onClick = { onClickOrderStatusChange() },
+                        colors = ButtonDefaults.buttonColors(Color.Green)
+                    ) {
+                        Text(text = "Approved", fontWeight = FontWeight.SemiBold)
+                    }
                 }
             }
         }
